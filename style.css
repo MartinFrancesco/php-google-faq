@@ -1,0 +1,105 @@
+/* GENERAL STYLE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {  
+    text-decoration: none;
+    color: #5f6368;
+}
+
+a:focus {
+    color: dodgerblue;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-bottom: 2px solid #5f6368;
+    z-index: 1;
+}
+
+header .left ul li, footer .left ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+header .left > a, footer .left > a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+}
+
+header .right, footer .right {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #000;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.pref {
+    margin-right: 10px;
+    background: #fff;
+}
+
+.circle img {
+    width: 100%;
+}
+
+/* MAIN-CONTENT */
+.container {
+    width: 1000px;
+    margin: 200px auto 0 auto;
+}
+
+.container .text-box {
+   margin: 50px 0;
+   color: #3c4043;
+   line-height: 30px;
+}
+
+.text-box h2 {
+    margin-bottom: 25px;
+}
+
+.text-box p {
+    font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+    background: #ccc;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
